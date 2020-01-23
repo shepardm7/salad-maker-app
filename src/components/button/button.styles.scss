@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+
+@mixin get-color($color) {
+  background-color: $color;
+  &.is-inverse {
+    color: $color;
+    background-color: transparent;
+    -webkit-box-shadow: inset 0px 0px 0px 2px $color;
+    -moz-box-shadow: inset 0px 0px 0px 2px $color;
+    box-shadow: inset 0px 0px 0px 2px $color;
+
+    &:hover {
+      color: white;
+      background-color: $color;
+    }
+  }
+}
+
+$btn-border-radius: 5px;
+.button-comp {
+  //outline: none;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: $btn-border-radius;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  color: white;
+
+
+  &:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 999px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0px 0px 0px 999px rgba(0,0,0,0.2);
+    box-shadow: inset 0px 0px 0px 999px rgba(0,0,0,0.2);
+  }
+
+  &.color-default {
+    @include get-color($primary-dark);
+  }
+
+  &.color-danger {
+    @include get-color($danger);
+  }
+}

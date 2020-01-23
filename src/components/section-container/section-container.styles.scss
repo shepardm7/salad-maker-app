@@ -1,0 +1,42 @@
+@import "../../styles/colors";
+.section-container-comp {
+  height: 85vh;
+  width: 35%;
+  position: relative;
+  padding-top: 4.5rem;
+
+  .section-header {
+    min-width: 120px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+    position: absolute;
+    padding: 0.6rem 1rem;
+    background-color: $primary-light;
+    border: 2px solid $primary-dark;
+    //transform: translateY(-40%);
+    top: 0.8rem;
+    left: -18px;
+    color: $primary-dark;
+  }
+
+  &.has-border {
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 2px solid $primary-dark;
+  }
+
+  &.right-shadow {
+    -webkit-box-shadow: 7px 7px 0px 0px $primary-dark;
+    -moz-box-shadow: 7px 7px 0px 0px $primary-dark;
+    box-shadow: 7px 7px 0px 0px $primary-dark;
+  }
+
+  &.left-shadow {
+    -webkit-box-shadow: -7px 7px 0px 0px $primary-dark;
+    -moz-box-shadow: -7px 7px 0px 0px $primary-dark;
+    box-shadow: -7px 7px 0px 0px $primary-dark;
+  }
+}
