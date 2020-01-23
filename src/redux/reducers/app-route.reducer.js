@@ -1,9 +1,8 @@
 import {routeTypes} from "../types";
-import Fav from "../../components/fav/fav.comp";
 
 const initialState = {
 	header: 'My Fav Salads',
-	Comp: Fav,
+	Comp: 'fav',
 	props: {},
 	sectionProps: {}
 };
@@ -12,7 +11,7 @@ const AppRouteReducer = (state = initialState, action) => {
 	const {type, payload} = action;
 	switch (type) {
 		case routeTypes.setCurrentPage:
-			return {...state, currentRoute: payload};
+			return {...state, ...payload};
 		default:
 			return state;
 	}

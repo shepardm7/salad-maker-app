@@ -5,8 +5,9 @@ import PropTypes from 'prop-types';
 import './fav.styles.scss';
 import Button from "../button/button.comp";
 import SectionFooter from "../section-footer/section-footer.comp";
+import AppRouteActions from "../../redux/actions/app-route.actions";
 
-const Fav = props => {
+const Fav = ({ setRouteWithName }) => {
 	return (
 			<div className='fav-comp'>
 				<div className="list-container">
@@ -17,7 +18,7 @@ const Fav = props => {
 				{/*</div>*/}
 				<SectionFooter>
 					<Button label="Cancel" onClick={''} isInverse />
-					<Button label="Add Salad" onClick={''} />
+					<Button label="Add Salad" onClick={() => setRouteWithName('saladMaker')} />
 				</SectionFooter>
 			</div>
 	);
@@ -27,4 +28,8 @@ Fav.propTypes = {
 
 };
 
-export default Fav;
+const mapDispatchToProps = {
+	setRouteWithName: AppRouteActions.setRouteWithName
+};
+
+export default connect(null, mapDispatchToProps)(Fav);

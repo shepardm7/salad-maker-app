@@ -1,27 +1,26 @@
 import {routeTypes} from "../types";
-import Fav from "../../components/fav/fav.comp";
-import SaladMaker from "../../components/salad-maker/salad-maker.comp";
 
 const routesMap = {
 	fav: {
 		defaultHeader: 'My Fav Salads',
-		Comp: Fav,
+		Comp: 'fav',
 		defaultProps: {},
 		sectionProps: {}
 	},
 	saladMaker: {
 		defaultHeader: 'Salad maker',
-		Comp: SaladMaker,
+		Comp: 'saladMaker',
 		defaultProps: {},
 		sectionProps: {}
 	}
 };
 
-const setRoute = (Comp, header, props = {}, sectionProps = {}) => dispatch => {
+export const setRoute = (Comp, header, props = {}, sectionProps = {}) => dispatch => {
 	dispatch({ type: routeTypes.setCurrentPage, payload: { Comp, header, props, sectionProps }});
+	console.log('app route actions', AppRouteActions);
 };
 
-const setRouteWithName = (name, props) => dispatch => {
+export const setRouteWithName = (name, props = {}) => dispatch => {
 	dispatch(setRoute(routesMap[name].Comp, routesMap[name].defaultHeader, {...routesMap[name].defaultProps, ...props}, routesMap[name].sectionProps));
 };
 
