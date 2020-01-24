@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c01e30ace07f7cfac7e6dc3bb002dfb",
+    "revision": "a73c4122943985e04338f8c22dfd5ba2",
     "url": "/salad-maker-app/index.html"
   },
   {
-    "revision": "a41cb9b8fd98f3fac8b9",
-    "url": "/salad-maker-app/static/css/main.03e198df.chunk.css"
+    "revision": "6447f7d0aad465a5d0e2",
+    "url": "/salad-maker-app/static/css/main.2b09de85.chunk.css"
   },
   {
     "revision": "1635fd885b4e84782ecf",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/salad-maker-app/static/js/2.1c40b263.chunk.js.LICENSE"
   },
   {
-    "revision": "a41cb9b8fd98f3fac8b9",
+    "revision": "6447f7d0aad465a5d0e2",
     "url": "/salad-maker-app/static/js/main.b027636e.chunk.js"
   },
   {

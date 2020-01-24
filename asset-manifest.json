@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/salad-maker-app/static/css/main.03e198df.chunk.css",
+    "main.css": "/salad-maker-app/static/css/main.2b09de85.chunk.css",
     "main.js": "/salad-maker-app/static/js/main.b027636e.chunk.js",
     "main.js.map": "/salad-maker-app/static/js/main.b027636e.chunk.js.map",
     "runtime-main.js": "/salad-maker-app/static/js/runtime-main.277c2a75.js",
@@ -8,9 +8,9 @@
     "static/js/2.1c40b263.chunk.js": "/salad-maker-app/static/js/2.1c40b263.chunk.js",
     "static/js/2.1c40b263.chunk.js.map": "/salad-maker-app/static/js/2.1c40b263.chunk.js.map",
     "index.html": "/salad-maker-app/index.html",
-    "precache-manifest.83a8a35378225c1e5f15477b4c5e0b6d.js": "/salad-maker-app/precache-manifest.83a8a35378225c1e5f15477b4c5e0b6d.js",
+    "precache-manifest.0e018675fe3fa46e0cb75ac055390ca2.js": "/salad-maker-app/precache-manifest.0e018675fe3fa46e0cb75ac055390ca2.js",
     "service-worker.js": "/salad-maker-app/service-worker.js",
-    "static/css/main.03e198df.chunk.css.map": "/salad-maker-app/static/css/main.03e198df.chunk.css.map",
+    "static/css/main.2b09de85.chunk.css.map": "/salad-maker-app/static/css/main.2b09de85.chunk.css.map",
     "static/js/2.1c40b263.chunk.js.LICENSE": "/salad-maker-app/static/js/2.1c40b263.chunk.js.LICENSE",
     "static/media/aurgula.jpg": "/salad-maker-app/static/media/aurgula.d3d73194.jpg",
     "static/media/cheddar-cheese.jpg": "/salad-maker-app/static/media/cheddar-cheese.ac0c114a.jpg",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.277c2a75.js",
     "static/js/2.1c40b263.chunk.js",
-    "static/css/main.03e198df.chunk.css",
+    "static/css/main.2b09de85.chunk.css",
     "static/js/main.b027636e.chunk.js"
   ]
 }
