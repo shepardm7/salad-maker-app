@@ -13,16 +13,18 @@ const Fav = ({ setRouteWithName, favList }) => {
 		console.log('favList', favList);
 	}, []);
 	
+	const handleOnAddClick = () => {
+		if (favList.length === 3) return;
+		setRouteWithName('saladMaker')
+	};
+	
 	return (
 			<div className='fav-comp'>
 				<div className="list-container">
 					<FavList favList={favList} />
 				</div>
-				{/*<div className="section-footer cart-footer">*/}
-				{/*	<Button label="Add" onClick={() => {}} color='danger' isInverse />*/}
-				{/*</div>*/}
 				<SectionFooter>
-					<Button label="Add Salad" onClick={() => setRouteWithName('saladMaker')} />
+					<Button label="Add Salad" onClick={handleOnAddClick} disabled={favList.length === 3} />
 				</SectionFooter>
 			</div>
 	);

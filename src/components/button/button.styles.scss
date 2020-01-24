@@ -28,7 +28,16 @@ $btn-border-radius: 8px;
   position: relative;
   cursor: pointer;
   color: white;
+  &.disabled {
+    cursor: not-allowed;
+    color: lightgrey;
+    padding: 0.8rem 1.2rem;
+    margin: 0 !important;
 
+    &:hover {
+      box-shadow: none;
+    }
+  }
 
   &:hover {
     -webkit-box-shadow: inset 0px 0px 0px 999px rgba(0,0,0,0.2);
