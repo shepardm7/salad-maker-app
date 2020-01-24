@@ -25,6 +25,77 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  background-color: #FFF;
+  overflow-y: hidden;
 
+  .salad-bowl {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 34em;
+    height: 30em;
+    opacity: 0.7;
+    pointer-events: none;
+    bottom: -11em;
+    z-index: 0;
+
+    &.left {
+      left: -11em;
+      transform: rotate(35deg);
+      -webkit-animation: slide-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+      animation: slide-tr 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    }
+
+    &.right {
+      right: -11em;
+      transform: rotate(-35deg);
+      -webkit-animation: slide-tl 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+      animation: slide-tl 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    }
+
+    @-webkit-keyframes slide-tr {
+      0% {
+        -webkit-transform: translateY(30em) translateX(-30em) rotate(35deg);
+        transform: translateY(30em) translateX(-30em) rotate(35deg);
+      }
+      100% {
+        -webkit-transform: translateY(0) translateX(0) rotate(35deg);
+        transform:translateY(0) translateX(0) rotate(35deg);
+      }
+    }
+    @keyframes slide-tr {
+      0% {
+        -webkit-transform: translateY(30em) translateX(-30em) rotate(35deg);
+      transform: translateY(30em) translateX(-30em) rotate(35deg);
+      }
+      100% {
+        -webkit-transform: translateY(0) translateX(0) rotate(35deg);
+        transform: translateY(0) translateX(0) rotate(35deg);
+      }
+    }
+
+    @-webkit-keyframes slide-tl {
+      0% {
+        -webkit-transform: translateY(30em) translateX(30em) rotate(-35deg);
+        transform: translateY(30em) translateX(30em) rotate(-35deg);
+      }
+      100% {
+        -webkit-transform: translateY(0) translateX(0) rotate(-35deg);
+        transform:translateY(0) translateX(0) rotate(-35deg);
+      }
+    }
+    @keyframes slide-tl {
+      0% {
+        -webkit-transform: translateY(30em) translateX(30em) rotate(-35deg);
+        transform: translateY(30em) translateX(30em) rotate(-35deg);
+      }
+      100% {
+        -webkit-transform: translateY(0) translateX(0) rotate(-35deg);
+        transform: translateY(0) translateX(0) rotate(-35deg);
+      }
+    }
+  }
 }
 

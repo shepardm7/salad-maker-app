@@ -26,7 +26,9 @@ const FavListItem = ({ item, setRoute, deleteSalad }) => {
 			confirmButtonText: 'Yes',
 			cancelButtonText: 'No',
 			showCancelButton: true,
-			focusCancel: true
+			focusCancel: true,
+			cancelButtonColor: '#4CAF50',
+			confirmButtonColor: '#f44336'
 		}).then(res => {
 			if (res.value) {
 				deleteSalad(id);
