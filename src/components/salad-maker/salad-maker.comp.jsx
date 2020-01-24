@@ -8,6 +8,7 @@ import Button from "../button/button.comp";
 import AppRouteActions, {setRouteWithName} from "../../redux/actions/app-route.actions";
 import SmIngredients from "../sm-ingredients/sm-ingredients.comp";
 import {ingredients} from "../../data/data-store";
+import SaladOverview from "../salad-overview/salad-overview.comp";
 
 const SaladMaker = ({ setRouteWithName, selectedSalad }) => {
 	console.log('AppRouteActions', AppRouteActions);
@@ -17,6 +18,12 @@ const SaladMaker = ({ setRouteWithName, selectedSalad }) => {
 	useEffect(() => {
 	
 	}, []);
+	
+	const saladColors = {
+		lettuces: '#4CAF50',
+		toppings: '#FF9800',
+		dressings: '#F57C00'
+	};
 	
 	const handleOnOptionSelect = (key, itemKey) => {
 		const doOnSelect = () => {
@@ -49,7 +56,8 @@ const SaladMaker = ({ setRouteWithName, selectedSalad }) => {
 	return (
 			<div className='salad-maker-comp'>
 				
-				<SmIngredients selectedSalad={selectedSaladCopy} handleOnItemClick={handleOnOptionSelect}/>
+				<SmIngredients selectedSalad={selectedSaladCopy} handleOnItemClick={handleOnOptionSelect} saladColors={saladColors} />
+				<SaladOverview selectedSalad={selectedSaladCopy} saladColors={saladColors} />
 				<SectionFooter>
 					<Button label='Cancel' onClick={() => setRouteWithName('fav')} isInverse />
 				</SectionFooter>

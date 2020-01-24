@@ -4,7 +4,7 @@ import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import './sm-ingredients.styles.scss';
 import IngredientListItem from "../ingredient-list-item/ingredient-list-item.comp";
 
-const SmIngredients = ({selectedSalad, handleOnItemClick}) => {
+const SmIngredients = ({selectedSalad, handleOnItemClick, saladColors }) => {
 	const [stateTabs, setStateTabs] = useState({
 		lettuces: true,
 		toppings: true,
@@ -12,11 +12,6 @@ const SmIngredients = ({selectedSalad, handleOnItemClick}) => {
 	});
 	
 	console.log('sm-ingredients', selectedSalad);
-	const saladColors = {
-		lettuces: '#4CAF50',
-		toppings: '#FF9800',
-		dressings: '#F57C00'
-	};
 	
 	const links = [];
 	const tabs = [];
