@@ -8,8 +8,8 @@ const defaultConfig = {
 	cancelButtonColor: '#f44336'
 };
 
-export const showAlert = (config, customConfig = false) => {
-	return customConfig ? MySwal.fire({ ...defaultConfig, ...config }) : MySwal.fire({ ...config });
+export const showAlert = (config) => {
+	return MySwal.fire({ ...defaultConfig, ...config });
 };
 
 export const showToast = (config) => {

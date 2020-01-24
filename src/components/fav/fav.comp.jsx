@@ -13,19 +13,15 @@ const Fav = ({ setRouteWithName, favList }) => {
 		console.log('favList', favList);
 	}, []);
 	
-	const handleOnFavListItemClick = (favItem) => {
-		console.log(favItem);
-	};
 	return (
 			<div className='fav-comp'>
 				<div className="list-container">
-					<FavList favListItemOnClick={handleOnFavListItemClick} favList={favList} />
+					<FavList favList={favList} />
 				</div>
 				{/*<div className="section-footer cart-footer">*/}
 				{/*	<Button label="Add" onClick={() => {}} color='danger' isInverse />*/}
 				{/*</div>*/}
 				<SectionFooter>
-					<Button label="Cancel" onClick={''} isInverse />
 					<Button label="Add Salad" onClick={() => setRouteWithName('saladMaker')} />
 				</SectionFooter>
 			</div>

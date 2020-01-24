@@ -11,11 +11,13 @@ import {ingredients} from "../../data/data-store";
 import SaladOverview from "../salad-overview/salad-overview.comp";
 import {showTextAlert, showToast} from "../../utils/alert";
 import FavActions, {parseSalad} from "../../redux/actions/fav.actions";
+import mergeObj from 'lodash.merge';
 
 const SaladMaker = ({ setRouteWithName, selectedSalad, addOrUpdateSalad }) => {
 	console.log('AppRouteActions', AppRouteActions);
 	
-	const [selectedSaladCopy, setSelectedSaladCopy] = useState({...JSON.parse(JSON.stringify(ingredients)), ...JSON.parse(JSON.stringify(selectedSalad)) });
+	
+	const [selectedSaladCopy, setSelectedSaladCopy] = useState(mergeObj(JSON.parse(JSON.stringify(ingredients)), JSON.parse(JSON.stringify(selectedSalad))));
 	
 	useEffect(() => {
 	
@@ -73,7 +75,7 @@ const SaladMaker = ({ setRouteWithName, selectedSalad, addOrUpdateSalad }) => {
 				<SaladOverview selectedSalad={selectedSaladCopy} saladColors={saladColors} />
 				<SectionFooter>
 					<Button label='Cancel' onClick={() => setRouteWithName('fav')} isInverse color='danger'/>
-					<Button label='Add Salad' onClick={() => handleAddSaladClick()} />
+					<Button label={selectedSaladCopy.id ? 'Update Salad' : 'Add Salad'} onClick={() => handleAddSaladClick()} />
 				</SectionFooter>
 			</div>
 	);

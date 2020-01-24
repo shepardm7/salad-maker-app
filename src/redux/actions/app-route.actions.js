@@ -20,8 +20,8 @@ export const setRoute = (Comp, header, props = {}, sectionProps = {}) => dispatc
 	console.log('app route actions', AppRouteActions);
 };
 
-export const setRouteWithName = (name, props = {}) => dispatch => {
-	dispatch(setRoute(routesMap[name].Comp, routesMap[name].defaultHeader, {...routesMap[name].defaultProps, ...props}, routesMap[name].sectionProps));
+export const setRouteWithName = (name, props = {}, sectionProps = {}) => dispatch => {
+	dispatch(setRoute(routesMap[name].Comp, routesMap[name].defaultHeader, {...routesMap[name].defaultProps, ...props}, {...routesMap[name].sectionProps, ...sectionProps}));
 };
 
 const AppRouteActions = {
