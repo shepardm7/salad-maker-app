@@ -9,8 +9,10 @@ import AppRouteActions, {setRouteWithName} from "../../redux/actions/app-route.a
 import SmIngredients from "../sm-ingredients/sm-ingredients.comp";
 import {ingredients} from "../../data/data-store";
 import SaladOverview from "../salad-overview/salad-overview.comp";
+import {showTextAlert, showToast} from "../../utils/alert";
+import FavActions, {parseSalad} from "../../redux/actions/fav.actions";
 
-const SaladMaker = ({ setRouteWithName, selectedSalad }) => {
+const SaladMaker = ({ setRouteWithName, selectedSalad, addOrUpdateSalad }) => {
 	console.log('AppRouteActions', AppRouteActions);
 	
 	const [selectedSaladCopy, setSelectedSaladCopy] = useState({...JSON.parse(JSON.stringify(ingredients)), ...JSON.parse(JSON.stringify(selectedSalad)) });
@@ -45,12 +47,23 @@ const SaladMaker = ({ setRouteWithName, selectedSalad }) => {
 				if (item.checked) count += 1;
 			});
 			if (selectedSaladCopy[key][itemKey].checked) {
-				if (count === 1) return;
+				if (count === 1) {
+					showToast({ icon: 'warning', title: 'Must have at least 1 base for your salad!'});
+					return;
+				}
 				doOnSelect();
 			} else {
 				doOnSelect()
 			}
 		} else doOnSelect();
+	};
+	
+	const handleAddSaladClick = () => {
+		showTextAlert(selectedSaladCopy.name).then(value => {
+			if (value === undefined) return;
+			addOrUpdateSalad({ ...selectedSaladCopy, name: value });
+			setRouteWithName('fav');
+		});
 	};
 	
 	return (
@@ -59,7 +72,8 @@ const SaladMaker = ({ setRouteWithName, selectedSalad }) => {
 				<SmIngredients selectedSalad={selectedSaladCopy} handleOnItemClick={handleOnOptionSelect} saladColors={saladColors} />
 				<SaladOverview selectedSalad={selectedSaladCopy} saladColors={saladColors} />
 				<SectionFooter>
-					<Button label='Cancel' onClick={() => setRouteWithName('fav')} isInverse />
+					<Button label='Cancel' onClick={() => setRouteWithName('fav')} isInverse color='danger'/>
+					<Button label='Add Salad' onClick={() => handleAddSaladClick()} />
 				</SectionFooter>
 			</div>
 	);
@@ -67,7 +81,8 @@ const SaladMaker = ({ setRouteWithName, selectedSalad }) => {
 
 SaladMaker.defaultProps = {
 	selectedSalad: {
-		id: null
+		id: null,
+		name: ''
 	}
 };
 
@@ -76,7 +91,8 @@ SaladMaker.propTypes = {
 };
 
 const mapDispatchToProps = {
-	setRouteWithName: setRouteWithName
+	setRouteWithName: setRouteWithName,
+	addOrUpdateSalad: FavActions.addOrUpdateItem
 };
 
 export default connect(null, mapDispatchToProps)(SaladMaker);

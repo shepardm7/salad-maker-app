@@ -16,13 +16,14 @@
   }
 }
 
-$btn-border-radius: 5px;
+$btn-border-radius: 8px;
 .button-comp {
   //outline: none;
   border: none;
-  padding: 0.5rem 0.8rem;
+  padding: 0.8rem 1.2rem;
   border-radius: $btn-border-radius;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
   font-weight: bold;
   position: relative;
   cursor: pointer;

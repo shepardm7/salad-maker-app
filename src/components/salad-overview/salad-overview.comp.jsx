@@ -4,7 +4,7 @@ import './salad-overview.styles.scss';
 import SaladOverviewItem from "../salad-overview-item/salad-overview-item.comp";
 
 const SaladOverview = ({ selectedSalad, saladColors }) => {
-	const { id, ...rest } = selectedSalad;
+	const { id, name, ...rest } = selectedSalad;
 	return (
 			<div className='salad-overview-comp'>
 				{Object.keys(rest).map(key => (

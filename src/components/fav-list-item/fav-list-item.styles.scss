@@ -1,8 +1,35 @@
+@import "../../styles/colors";
 .cart-list-item-comp {
-  width: 100%;
-  padding: 0.8rem 1rem;
+  //width: 100%;
+  min-width: 22em;
+  max-width: 100%;
+  min-height: 100px;
+  border-bottom: 1px solid $primary-dark;
+  overflow-x: hidden;
+  cursor: pointer;
 
   &:hover {
     background-color: #FAFAFA;
+  }
+
+  .header-container {
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: $primary-dark;
+    background-color: $green-100;
+    padding: 0.6rem 1.5rem;
+
+  }
+
+  .content {
+    padding: 0.5rem 1rem;
+
+    span {
+      &:not(:last-of-type)::after {
+        content: ", ";
+      }
+    }
   }
 }

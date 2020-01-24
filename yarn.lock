@@ -10130,6 +10130,16 @@ svgo@^1.0.0, svgo@^1.2.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+sweetalert2-react-content@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/sweetalert2-react-content/-/sweetalert2-react-content-2.0.2.tgz#bb3888d7ebfb2725eb8e2ce508621370bca7ab85"
+  integrity sha512-UmqwSRBMq2sVNts84tybZfAfNq5ULxLvIz59CsXtMD/d/b4CVgXFcKds0z7GE5C0AKvFdnUNUO/yjC4lazKS2Q==
+
+sweetalert2@^9.7.0:
+  version "9.7.0"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-9.7.0.tgz#4a3c4c9e360169ebcb70c2d648cc47b8f3d6e314"
+  integrity sha512-oGGj9hzl/HFx5I33VQyuYCIr3O1HBpQWB10MGYgzbc/3YWKaViH26U1eqq1N+5wtNlviscRBu+4vhSC/237THw==
+
 symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
@@ -10610,6 +10620,11 @@ uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+
+uuid@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
