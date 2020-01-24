@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/salad-maker-app/static/css/main.03e198df.chunk.css",
+    "main.js": "/salad-maker-app/static/js/main.b027636e.chunk.js",
+    "main.js.map": "/salad-maker-app/static/js/main.b027636e.chunk.js.map",
+    "runtime-main.js": "/salad-maker-app/static/js/runtime-main.277c2a75.js",
+    "runtime-main.js.map": "/salad-maker-app/static/js/runtime-main.277c2a75.js.map",
+    "static/js/2.1c40b263.chunk.js": "/salad-maker-app/static/js/2.1c40b263.chunk.js",
+    "static/js/2.1c40b263.chunk.js.map": "/salad-maker-app/static/js/2.1c40b263.chunk.js.map",
+    "index.html": "/salad-maker-app/index.html",
+    "precache-manifest.83a8a35378225c1e5f15477b4c5e0b6d.js": "/salad-maker-app/precache-manifest.83a8a35378225c1e5f15477b4c5e0b6d.js",
+    "service-worker.js": "/salad-maker-app/service-worker.js",
+    "static/css/main.03e198df.chunk.css.map": "/salad-maker-app/static/css/main.03e198df.chunk.css.map",
+    "static/js/2.1c40b263.chunk.js.LICENSE": "/salad-maker-app/static/js/2.1c40b263.chunk.js.LICENSE",
+    "static/media/aurgula.jpg": "/salad-maker-app/static/media/aurgula.d3d73194.jpg",
+    "static/media/cheddar-cheese.jpg": "/salad-maker-app/static/media/cheddar-cheese.ac0c114a.jpg",
+    "static/media/cucumber.jpg": "/salad-maker-app/static/media/cucumber.591eb8d3.jpg",
+    "static/media/dressing.jpg": "/salad-maker-app/static/media/dressing.d58943c7.jpg",
+    "static/media/feta-cheese.jpg": "/salad-maker-app/static/media/feta-cheese.b0ab98b8.jpg",
+    "static/media/green-pepper.jpg": "/salad-maker-app/static/media/green-pepper.b43e4db0.jpg",
+    "static/media/honey-mustard.jpg": "/salad-maker-app/static/media/honey-mustard.a5f46aa4.jpg",
+    "static/media/house-dressing.jpg": "/salad-maker-app/static/media/house-dressing.46768863.jpg",
+    "static/media/lettuce.jpg": "/salad-maker-app/static/media/lettuce.82a62f7d.jpg",
+    "static/media/logo.svg": "/salad-maker-app/static/media/logo.5d5d9eef.svg",
+    "static/media/mixed-greens.jpg": "/salad-maker-app/static/media/mixed-greens.2f642faa.jpg",
+    "static/media/onion.jpg": "/salad-maker-app/static/media/onion.50b2a66e.jpg",
+    "static/media/pickle.jpg": "/salad-maker-app/static/media/pickle.c0e1bb76.jpg",
+    "static/media/pineapple.jpg": "/salad-maker-app/static/media/pineapple.42ddc174.jpg",
+    "static/media/ranch.png": "/salad-maker-app/static/media/ranch.d77f06a0.png",
+    "static/media/salad-bowl.png": "/salad-maker-app/static/media/salad-bowl.83162198.png",
+    "static/media/spinach.jpg": "/salad-maker-app/static/media/spinach.00cd63d8.jpg",
+    "static/media/tomato.jpg": "/salad-maker-app/static/media/tomato.7ff655c7.jpg",
+    "static/media/toppings.jpg": "/salad-maker-app/static/media/toppings.6f76cd3a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.277c2a75.js",
+    "static/js/2.1c40b263.chunk.js",
+    "static/css/main.03e198df.chunk.css",
+    "static/js/main.b027636e.chunk.js"
+  ]
+}
