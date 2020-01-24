@@ -1,8 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+@import "./styles/colors";
 
 * {
   font-family: 'Roboto Slab', serif;
   box-sizing: border-box;
+
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: lightgrey;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: grey;
+    outline: 1px solid $primary-light;
+  }
 }
 .App {
   width: 100vw;

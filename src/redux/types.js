@@ -8,3 +8,12 @@ export const favTypes = {
 	updateFavItem: 'cart:updateFavItem',
 	clearFavs: 'cart:clearFavs'
 };
+
+export const smTypes = {
+	addLettuce: 'sm:addLettuce',
+	removeLettuce: 'sm:removeLettuce',
+	addTopping: 'sm:addTopping',
+	removeTopping: 'sm:removeTopping',
+	addDressing: 'sm:addDressing',
+	removeDressing: 'sm:removeDressing'
+};

@@ -16,6 +16,11 @@ const clearFavs = () => dispatch => {
 	dispatch({ type: favTypes.clearFavs });
 };
 
+const getParsedFavList = () => (dispatch, getState) => {
+	const { fav: { list } } = getState();
+	
+};
+
 const FavActions = {
 	addFavItem,
 	removeFavItem,
