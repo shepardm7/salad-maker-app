@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/salad-maker-app/precache-manifest.0e018675fe3fa46e0cb75ac055390ca2.js"
+  "/salad-maker-app/precache-manifest.0eb773c399d5a1defaf141737574b756.js"
 );
 
 self.addEventListener('message', (event) => {
